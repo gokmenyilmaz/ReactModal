@@ -33,8 +33,11 @@ class Confirm extends Component {
   }
 
   handleConfirm() {
-    this.setState({ isOpen: false });
-    resolve(true);
+
+    console.log(this.props);
+
+    // this.setState({ isOpen: false });
+    // resolve(true);
   }
 
   show(props = {}) {

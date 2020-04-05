@@ -6,7 +6,6 @@ import FormData from './FormData'
 export default class App extends Component {
   constructor() {
     super();
-    
     this.removeItem = this.removeItem.bind(this);
   }
 

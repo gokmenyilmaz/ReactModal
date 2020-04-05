@@ -25,6 +25,8 @@ class Confirm extends Component {
     this.handleCancel = this.handleCancel.bind(this);
     this.handleConfirm = this.handleConfirm.bind(this);
     this.show = this.show.bind(this);
+
+    this.child = React.createRef();
   }
 
   handleCancel() {
@@ -34,7 +36,9 @@ class Confirm extends Component {
 
   handleConfirm() {
 
-    console.log(this.props);
+    var kontrol=this.state.showConfirmProps.message;
+
+    console.log(kontrol.ref.current.ValidateData());
 
     // this.setState({ isOpen: false });
     // resolve(true);

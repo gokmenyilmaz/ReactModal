@@ -2,6 +2,12 @@ import React, { Component } from 'react'
 
 export default class FormData extends Component {
 
+    static defaultProps=
+    {
+        Ad:"cem",
+        Validate:this.ValidateData
+    }
+
     ValidateData()
     {
         return "Uygun";
@@ -11,6 +17,8 @@ export default class FormData extends Component {
         return (
             <div>
                 For data verisi
+
+            
             </div>
         )
     }

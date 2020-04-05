@@ -11,9 +11,6 @@ export default class App extends Component {
   }
 
   async removeItem({ target: { value } }) {
-    
-  
-
     const result = await confirmService.show({
       message: <FormData ref={React.createRef()}/>
     });

@@ -8,10 +8,6 @@ export default class App extends Component {
     super();
     
     this.removeItem = this.removeItem.bind(this);
-
-    this.refForm=React.createRef()
-
-
   }
 
   async removeItem({ target: { value } }) {
@@ -19,7 +15,7 @@ export default class App extends Component {
   
 
     const result = await confirmService.show({
-      message: <FormData ref={this.refForm}/>
+      message: <FormData ref={React.createRef()}/>
     });
 
     if (result) {
